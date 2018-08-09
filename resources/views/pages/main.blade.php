@@ -1,23 +1,26 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="col-md-6 col-sm-12 col-xs-12">
-        <div class="text">
-            <p class="text1">
-                We would like you to <br/>
-                share your experiences <br/>
-                and thoughts with us on <br/>
-                your cancer diagnosis
-            </p>
-            <p class="text2">
-                Please take a moment to answer a series of short questions for us to </br>
-                understand how your cancer diagnosis impacted your life
-            </p>
-            <button class="btn study"><p class="btn-text">Take part in the study</p></button>
+<div class="page-content h-100">
+    <div class="container h-100" style="overflow: auto">
+        <div class="row h-100">
+            <div class="col-md-6 py-3">
+                <div class="d-flex h-100">
+                    <div class="align-self-center">
+                        <h1 class="font-weight-bold">We would like you to share your experiences and thoughts with us on your cancer diagnosis</h1>
+                        <p class="mt-4">Please take a moment to answer a series of short questions for us to understand how your cancer diagnosis impacted your life</p>
+                        <button class="btn mt-5">Take part in the study</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 py-3">
+                <div class="d-flex h-100">
+                    <div class="align-self-center">
+                        <img src="images/cancers.png" class="img-fluid" />
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-    <div class="col-md-6 col-sm-12 col-xs-12">
-        <img class="cancers" src="{{asset('images/Cancers.png')}}">
-    </div>
+</div>
 @endsection

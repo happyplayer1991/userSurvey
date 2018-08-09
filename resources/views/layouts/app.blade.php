@@ -1,20 +1,13 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" ng-app="userSurvey">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" ng-app="userSurvey" class="h-100">
 <head>
     @include('includes.head')
 </head>
-<body>
-    <div id="page" class="container">
-        <header class="row">
-            @include('includes.header')
-        </header>
-        
-        <div id="main" class="row" ng-controller="surveyController">
-                @yield('content')
-        </div>
-        <footer class="row">
-            @include('includes.footer')
-        </footer>
-    </div>
+<body class="h-100 bg-pink">
+    @include('includes.header')
+    
+    @yield('content')
+
+    @include('includes.footer')
 </body>
 </html>
