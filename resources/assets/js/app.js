@@ -8,14 +8,14 @@
  // Angular
 import './bootstrap';
 import 'angular';
-console.log('here');
+
 var app = angular.module('userSurvey', [] ,['$httpProvider', function ($httpProvider) {
     $httpProvider.defaults.headers.post['X-CSRF-TOKEN'] = $('meta[name=csrf-token]').attr('content');
 }]);
  
-app.controller('surveyController', ['$scope', '$http', function ($scope, $http) {
+// app.controller('surveyController', ['$scope', '$http', function ($scope, $http) {
     
-}]);
+// }]);
 
 
 // require('./bootstrap');

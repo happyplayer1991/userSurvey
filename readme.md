@@ -63,3 +63,4 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ## Author
 npm install
 npm install angualr --save-dev
+npm run dev

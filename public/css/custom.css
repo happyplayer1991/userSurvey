@@ -1,111 +1,117 @@
 /*
- =============================
+=============================
     Font 
+=============================
+*/
+@font-face {
+  font-family: 'Flama';
+  font-style: normal;
+  font-weight: lighter;
+  src: local("Flama-Light"), url("fonts/Flama-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Flama';
+  font-style: normal;
+  font-weight: bold;
+  src: local("Flama-Bold"), url("fonts/Flama-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  src: local("Montserrat-SemiBold"), url("fonts/Montserrat-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bolder;
+  src: local("Montserrat-Bold"), url("fonts/Montserrat-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Montserrat-Regular"), url("fonts/Montserrat-Regular.woff") format("woff");
+}
+
+/*
+ =============================
+      Variables
  =============================
  */
-
- @font-face {
-    font-family: 'Flama';
-    font-style: normal;
-    font-weight: lighter;
-    src: local('Flama-Light'), url('fonts/Flama-Light.woff') format('woff');
-  }
-  
-  @font-face {
-    font-family: 'Flama';
-    font-style: normal;
-    font-weight: bold;
-    src: local('Flama-Bold'), url('fonts/Flama-Bold.woff') format('woff');
-  }
-  
-  @font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: bold;
-    src: local('Montserrat-SemiBold'), url('fonts/Montserrat-SemiBold.woff') format('woff');
-  }
-
-  @font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: bolder;
-    src: local('Montserrat-Bold'), url('fonts/Montserrat-Bold.woff') format('woff');
-  }
-
-  @font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: normal;
-      src: local('Montserrat-Regular'), url('fonts/Montserrat-Regular.woff') format('woff');
-  }
-  
-  /*
-   =============================
+/*
+ =============================
       Fit Screen
-   =============================
-   */
-  
-  html, body {
-    font-family: 'Montserrat';
-    font-weight: normal;
-    color: #fff;
-  }
-  
-  /*
-   =============================
-      Global
-   =============================
-   */
-    .btn {
-      background-color: #fff;
-      color: #777;
-      border-color: #fff;
-      border-radius: 20px;
-      padding: 10px 30px;
-    }
-   .bg-pink {
-      background-color: #e8a3ff;
-      border-color: #e8a3ff;
-    }
-    .bg-purple {
-      background-color: #967bb6;
-      border-color: #967bb6;
-    }
-    .text-pink {
-      color: #e8a3ff;
-    }
+ =============================
+ */
+html, body {
+  font-family: 'Montserrat';
+  font-weight: normal;
+  color: #fff;
+}
 
-  /*
-   =============================
-      Navbar
-   =============================
-   */
-  .navbar-brand {
-    font-family: "Flama";
-  }
+/*
+ =============================
+    Global
+ =============================
+ */
+.btn {
+  background-color: #fff;
+  color: #777;
+  border-color: #fff;
+  border-radius: 20px;
+  padding: 10px 30px;
+}
 
-  /*
-   =============================
-      Content
-   =============================
-   */
-  .page-content {
-    padding-top: 76px;
-    padding-bottom: 76px;
-  }
+.bg-pink {
+  background-color: #e8a3ff;
+  border-color: #e8a3ff;
+}
 
-  /*
-   =============================
-      Footer
-   =============================
-   */
-   .social-icons li a {
-    width: 40px;
-    height: 40px;
-    display: block;
-   }
+.bg-purple {
+  background-color: #967bb6;
+  border-color: #967bb6;
+}
 
-   .social-icons li a i {
-     line-height: 40px;
-     font-size: 20px;
-   }
+.text-pink {
+  color: #e8a3ff;
+}
+
+/*
+ =============================
+    Navbar
+ =============================
+ */
+.navbar-brand {
+  font-family: "Flama";
+}
+
+/*
+ =============================
+    Content
+ =============================
+ */
+.page-content {
+  padding-top: 76px;
+  padding-bottom: 76px;
+}
+
+/*
+ =============================
+    Footer
+ =============================
+ */
+.social-icons li a {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.social-icons li a i {
+  line-height: 40px;
+  font-size: 20px;
+}
