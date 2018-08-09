@@ -1,0 +1,208 @@
+/*
+ =============================
+    Font 
+ =============================
+ */
+
+ @font-face {
+    font-family: 'Flama-Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Flama-Light'), url('fonts/Flama-Light.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Flama-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Flama-Bold'), url('fonts/Flama-Bold.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Montserrat-Regular';
+    font-style: normal;
+    font-weight: normal;
+      src: local('Montserrat-Regular'), url('fonts/Montserrat-Regular.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Montserrat-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Montserrat-Bold'), url('fonts/Montserrat-Bold.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Montserrat-SemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Montserrat-SemiBold'), url('fonts/Montserrat-SemiBold.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Montserrat-Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Montserrat-Medium'), url('Montserrat-Medium.woff') format('woff');
+  }
+  
+  /*
+   =============================
+      Fit Screen
+   =============================
+   */
+  
+  html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+  }
+  
+  div#page {
+    min-width: 100%;
+  }
+  
+  #main {
+    height: calc(100vh - 200px);
+    background-color: #e8a3ff;
+  }
+  
+  /*
+   =============================
+      Header and Footer
+   =============================
+   */
+  
+  div.header-text,
+  div.footer-text {
+    /* margin: 30px 0 30px 100px; */
+    margin-left: 100px;
+    line-height: 100px;
+  }
+  
+  div.footer-text {
+    float: left;
+  }
+  
+  p.header-360,
+  p.footer-360,
+  p.header-care,
+  p.footer-care,
+  p.copyright {
+    display: inline;
+    font-weight:normal;
+    font-size:38px;
+  }
+  
+  p.header-360,
+  p.footer-360 {
+    font-family:'Flama-Bold';
+  }
+  
+  p.header-care,
+  p.footer-care,
+  p.copyright {
+    font-family:'Flama-Light';
+  }
+  
+  p.copyright {
+    font-size:15px !important;
+    margin-left: 30px;
+  }
+  
+  p.header-360 {
+    color: #e8a3ff;
+  }
+  
+  p.header-care {
+    color: #6d6e71;
+  }
+  
+  p.footer-360,
+  p.footer-care,
+  p.copyright {
+    color: #fff;
+  }
+  
+  header {
+    height: 100px;
+  }
+  
+  footer {
+    display: block !important;
+    height: 100px;
+    background-color: #967bb6;
+  }
+  
+  .social-icons {
+    float: right;
+    line-height: 100px;
+    margin-right: 100px;
+  }
+  .social-icons [class*="fa fa-"] {
+    background-color: #967bb6;
+    border: 2px solid white;
+    border-radius: 30px;
+    color: #fff;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    margin: auto 3px;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  /*
+   =========================
+      Main Page
+   =========================
+   */
+  
+  div.text {
+    position: absolute;
+    /* height: 60%;
+    top: 20%; */
+    margin-left: -15px;           /* on col-md-6, padding-right: 15px; */
+    padding-left: 100px;
+    margin-top: 100px;
+  }
+  p.text1 {
+    font-family: 'Montserrat-Bold';
+    font-weight: bold;
+    font-size: 43px;
+    line-height: 40px;
+    /* letter-spacing: 5px; */
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  
+  p.text2 {
+    font-family: 'Montserrat-Regular';
+    font-weight: normal;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  
+  img.cancers {
+    display: block;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    /* top: 40%; */
+    margin-top: 200px;
+  }
+  
+  button.study {
+    border-radius: 50px;
+    color: #6d6e71;
+    background-color: #fff;
+  }
+  
+  p.btn-text {
+    font-family: 'Montserrat-SemiBold';
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 20px;
+  }
