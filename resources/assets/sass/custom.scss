@@ -1,53 +1,6 @@
-/*
-=============================
-    Font 
-=============================
-*/
 
-@font-face {
-    font-family: 'Flama';
-    font-style: normal;
-    font-weight: lighter;
-    src: local('Flama-Light'), url('fonts/Flama-Light.woff') format('woff');
-}
-  
-@font-face {
-    font-family: 'Flama';
-    font-style: normal;
-    font-weight: bold;
-    src: local('Flama-Bold'), url('fonts/Flama-Bold.woff') format('woff');
-}
-  
-@font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: bold;
-    src: local('Montserrat-SemiBold'), url('fonts/Montserrat-SemiBold.woff') format('woff');
-}
+@import "variables";
 
-@font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: bolder;
-    src: local('Montserrat-Bold'), url('fonts/Montserrat-Bold.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Montserrat-Regular'), url('fonts/Montserrat-Regular.woff') format('woff');
-}
-
-/*
- =============================
-      Variables
- =============================
- */
-
-$white: #fff;
-$pink: #e8a3ff;
-$purple: #967bb6;
 /*
  =============================
       Fit Screen
@@ -55,7 +8,7 @@ $purple: #967bb6;
  */
   
 html, body {
-    font-family: 'Montserrat';
+    font-family: $font-montserrat;
     font-weight: normal;
     color: $white;
 }
@@ -92,9 +45,9 @@ html, body {
     Navbar
  =============================
  */
-  .navbar-brand {
-    font-family: "Flama";
-  }
+.navbar-brand {
+    font-family: $font-flama;
+}
 
 /*
  =============================
@@ -104,6 +57,9 @@ html, body {
 .page-content {
     padding-top: 76px;
     padding-bottom: 76px;
+    .container {
+        overflow: auto;
+    }
 }
 
 /*
@@ -119,4 +75,20 @@ html, body {
         line-height: 40px;
         font-size: 20px;   
     }
+}
+
+/*
+ =============================
+    Question
+ =============================
+ */
+
+.first {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.last {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }

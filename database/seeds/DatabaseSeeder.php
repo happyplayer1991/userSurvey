@@ -35,7 +35,7 @@ class DatabaseSeeder extends Seeder
             'id' => '2',
             'survey_id' => 1,
             'status' => 'activate',
-            'description' => '1.	At the time of diagnosis, I left the clinic/office understanding my diagnosis and treatment plan.'
+            'description' => '2.	Is there a caseworker or Clinical Nurse Specialist (CNS) assigned to support you through your treatment?'
         ]);
 
         Question_Option::create([

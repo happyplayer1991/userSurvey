@@ -38,6 +38,13 @@
   src: local("Montserrat-Regular"), url("fonts/Montserrat-Regular.woff") format("woff");
 }
 
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Montserrat-Medium"), url("fonts/Montserrat-Medium.woff") format("woff");
+}
+
 /*
  =============================
       Variables
@@ -49,7 +56,7 @@
  =============================
  */
 html, body {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: normal;
   color: #fff;
 }
@@ -100,6 +107,10 @@ html, body {
   padding-bottom: 76px;
 }
 
+.page-content .container {
+  overflow: auto;
+}
+
 /*
  =============================
     Footer
@@ -114,4 +125,19 @@ html, body {
 .social-icons li a i {
   line-height: 40px;
   font-size: 20px;
+}
+
+/*
+ =============================
+    Question
+ =============================
+ */
+.first {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.last {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }

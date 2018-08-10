@@ -6,3 +6,67 @@ $body-bg: #f5f8fa;
 $font-family-sans-serif: "Raleway", sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
+
+
+
+/*
+=============================
+    Font 
+=============================
+*/
+@font-face {
+    font-family: 'Flama';
+    font-style: normal;
+    font-weight: lighter;
+    src: local('Flama-Light'), url('fonts/Flama-Light.woff') format('woff');
+}
+  
+@font-face {
+    font-family: 'Flama';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Flama-Bold'), url('fonts/Flama-Bold.woff') format('woff');
+}
+  
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Montserrat-SemiBold'), url('fonts/Montserrat-SemiBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bolder;
+    src: local('Montserrat-Bold'), url('fonts/Montserrat-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Montserrat-Regular'), url('fonts/Montserrat-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Montserrat-Medium'), url('fonts/Montserrat-Medium.woff') format('woff');
+}
+
+/*
+ =============================
+      Variables
+ =============================
+ */
+
+// Color
+$white: #fff;
+$pink: #e8a3ff;
+$purple: #967bb6;
+
+// Font
+$font-montserrat: 'Montserrat';
+$font-flama: 'Flama';
