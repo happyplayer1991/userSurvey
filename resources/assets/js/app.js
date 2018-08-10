@@ -13,9 +13,11 @@ var app = angular.module('userSurvey', [] ,['$httpProvider', function ($httpProv
     $httpProvider.defaults.headers.post['X-CSRF-TOKEN'] = $('meta[name=csrf-token]').attr('content');
 }]);
  
-// app.controller('surveyController', ['$scope', '$http', function ($scope, $http) {
-    
-// }]);
+app.controller('SurveyController', ['$scope', '$http', function ($scope, $http) {
+    $scope.startSurvey = function() {
+        
+    }
+}]);
 
 
 // require('./bootstrap');
