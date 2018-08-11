@@ -88,6 +88,10 @@ html, body {
   color: #e8a3ff;
 }
 
+.text-purple {
+  color: #967bb6;
+}
+
 /*
  =============================
     Navbar
@@ -132,6 +136,14 @@ html, body {
     Question
  =============================
  */
+.question {
+  cursor: pointer;
+}
+
+.question:hover {
+  background-color: #d094d0;
+}
+
 .first {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -140,4 +152,47 @@ html, body {
 .last {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+}
+
+.step-start {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  font-size: 12px;
+  line-height: 1.42857;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+}
+
+.step-start i {
+  line-height: 40px;
+}
+
+.step-end {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  font-size: 12px;
+  line-height: 1.42857;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+}
+
+.step-end i {
+  line-height: 40px;
+}
+
+.progress-bar:before {
+  content: "";
+  width: 20%;
+  height: 8px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  background-color: #fff;
 }

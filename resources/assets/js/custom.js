@@ -8,7 +8,7 @@
         $httpProvider.defaults.headers.post['X-CSRF-TOKEN'] = $('meta[name=csrf-token]').attr('content');
         
         $routeProvider
-            .when('/question/:id', {
+            .when('/question', {
                 templateUrl: '/views/question.html',
                 controller: 'QuestionController'
             })
@@ -26,7 +26,5 @@
  app.controller('MainController', ['$scope', '$http', function ($scope, $http) {
     }])
     .controller('QuestionController', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
-        var next_id = parseInt($routeParams.id) + 1;
-        $scope.next_id = next_id;
     }]);
  

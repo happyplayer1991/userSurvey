@@ -13713,7 +13713,7 @@ var app = angular.module('userSurvey', ['ngRoute']);
 app.config(['$httpProvider', '$routeProvider', '$locationProvider', function ($httpProvider, $routeProvider, $locationProvider) {
     $httpProvider.defaults.headers.post['X-CSRF-TOKEN'] = $('meta[name=csrf-token]').attr('content');
 
-    $routeProvider.when('/question/:id', {
+    $routeProvider.when('/question', {
         templateUrl: '/views/question.html',
         controller: 'QuestionController'
     }).otherwise({
@@ -13727,10 +13727,7 @@ app.config(['$httpProvider', '$routeProvider', '$locationProvider', function ($h
     });
 }]);
 
-app.controller('MainController', ['$scope', '$http', function ($scope, $http) {}]).controller('QuestionController', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
-    var next_id = parseInt($routeParams.id) + 1;
-    $scope.next_id = next_id;
-}]);
+app.controller('MainController', ['$scope', '$http', function ($scope, $http) {}]).controller('QuestionController', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {}]);
 
 /***/ }),
 /* 12 */
