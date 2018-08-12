@@ -18,6 +18,7 @@ class CreateQuestionsTable extends Migration
         // Add
             $table->integer('survey_id')->unsigned();
             $table->text('description')->nullable(false);
+            $table->enum('type', ['check', 'free']);
             $table->enum('status', ['activate', 'not_activate'])->default('activate');
         
         // Foreign Key

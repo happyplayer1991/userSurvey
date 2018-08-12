@@ -9,7 +9,7 @@ class Question extends Model
     //
     protected $table = 'questions';
     protected $fillable = [
-        'survey_id', 'description', 'activate'
+        'survey_id', 'description', 'type', 'status'
     ];
 
     public function options() {

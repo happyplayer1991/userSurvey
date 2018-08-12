@@ -65,3 +65,4 @@ npm install
 npm install angular --save-dev
 npm install angular-route --save-dev
 npm run dev
+npm run dev --watch

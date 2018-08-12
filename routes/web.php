@@ -22,3 +22,5 @@ Route::get('/', function () {
 // App::missing(function($exception) {
 //     return view('index');
 // });
+
+Route::post('/question', 'QuestionController@question');

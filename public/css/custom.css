@@ -136,6 +136,11 @@ html, body {
     Question
  =============================
  */
+.questions {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
 .question {
   cursor: pointer;
 }
@@ -144,14 +149,8 @@ html, body {
   background-color: #d094d0;
 }
 
-.first {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
-
-.last {
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+.question.activate {
+  background-color: #967bb6;
 }
 
 .step-start {
@@ -195,4 +194,8 @@ html, body {
   -webkit-transition: .3s;
   transition: .3s;
   background-color: #fff;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }

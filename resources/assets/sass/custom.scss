@@ -86,6 +86,11 @@ html, body {
     Question
  =============================
  */
+.questions {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
 .question {
     cursor: pointer;
     &:hover {
@@ -93,14 +98,8 @@ html, body {
     }
 }
 
-.first {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-.last {
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+.question.activate {
+    background-color: $purple;
 }
 
 @mixin step() {
@@ -136,4 +135,8 @@ html, body {
     height: 8px;
     transition: .3s;
     background-color: #fff;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
